@@ -70,7 +70,7 @@ namespace Example
 
 1. Install Nuget package
 
-2. Use as follows...
+2. Use as follows. Here I'm using an environment variable. Don't hardcode this secret if possible...
 
 ```cs
 using System;
