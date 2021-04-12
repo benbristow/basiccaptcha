@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using SimpleCaptcha.Contracts;
-using SimpleCaptcha.Enums;
+﻿using BasicCaptcha.Contracts;
+using BasicCaptcha.Enums;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace SimpleCaptcha.Extensions
+namespace BasicCaptcha.Extensions
 {
     public static class ServiceCollectionExtensions
     {

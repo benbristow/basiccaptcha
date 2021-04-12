@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>SimpleCaptcha</RootNamespace>
-        <Title>SimpleCaptcha</Title>
+        <RootNamespace>BasicCaptcha</RootNamespace>
+        <Title>BasicCaptcha</Title>
         <Authors>Benjamin Bristow</Authors>
-        <Description>Simple minimal-dependency library to verify CAPTCHA tokens.</Description>
+        <Description>Basic minimal-dependency library to verify (re)CAPTCHA tokens.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

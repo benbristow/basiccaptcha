@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SimpleCaptcha.Exceptions
+namespace BasicCaptcha.Exceptions
 {
     public class CaptchaException : Exception
     {

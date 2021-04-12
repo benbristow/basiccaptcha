@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using SimpleCaptcha.Contracts;
-using SimpleCaptcha.Enums;
-using SimpleCaptcha.Providers;
+using BasicCaptcha.Contracts;
+using BasicCaptcha.Enums;
+using BasicCaptcha.Providers;
 
-namespace SimpleCaptcha
+namespace BasicCaptcha
 {
     public class CaptchaService : ICaptchaService
     {

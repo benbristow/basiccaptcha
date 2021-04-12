@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using BasicCaptcha.Contracts;
+using BasicCaptcha.Exceptions;
 using Newtonsoft.Json;
-using SimpleCaptcha.Contracts;
-using SimpleCaptcha.Exceptions;
 
-namespace SimpleCaptcha.Providers
+namespace BasicCaptcha.Providers
 {
     internal class GoogleRecaptcha : IExternalCaptchaProvider
     {

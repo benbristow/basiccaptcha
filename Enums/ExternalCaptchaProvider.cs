@@ -1,4 +1,4 @@
-﻿namespace SimpleCaptcha.Enums
+﻿namespace BasicCaptcha.Enums
 {
     public enum ExternalCaptchaProvider
     {
