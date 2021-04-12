@@ -13,7 +13,7 @@ Basic library for verifying CAPTCHA tokens. Currently only supports [Google ReCA
 1) Install Nuget Package
 
 2) Register the service with your secret key in your startup file, here I'm using an environment variable. Don't hardcode this secret if possible!
-```
+```cs
 using System;  
 using BasicCaptcha.Enums;  
 using BasicCaptcha.Extensions;  
@@ -32,7 +32,7 @@ namespace Example
 ```
 
 3. Use the service wherever you need require it...
-```
+```cs
 using System.Threading.Tasks;  
 using BasicCaptcha.Contracts;  
 using Microsoft.AspNetCore.Mvc;  
@@ -64,7 +64,7 @@ namespace Example
 
 ### Manual 
 
-```
+```cs
 using System.Threading.Tasks;  
 using BasicCaptcha;  
 using BasicCaptcha.Enums;  
