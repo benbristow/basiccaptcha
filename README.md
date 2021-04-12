@@ -44,7 +44,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Example  
 {  
     public class ExampleController  
-  {  
+    {  
         private readonly ICaptchaService _captchaService;  
   
         public ExampleController(ICaptchaService captchaService)  
@@ -73,6 +73,7 @@ namespace Example
 2. Use as follows...
 
 ```cs
+using System;
 using System.Threading.Tasks;  
 using BasicCaptcha;  
 using BasicCaptcha.Enums;  
@@ -81,10 +82,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace Example  
 {  
     public class ExampleController  
-  {  
+    {  
         public async Task<IActionResult> Example(string token)  
         {  
-            var captchaService = new CaptchaService(ExternalCaptchaProvider.GoogleRecaptcha, token);  
+            var captchaService = new CaptchaService(ExternalCaptchaProvider.GoogleRecaptcha, Environment.GetEnvironmentVariable("GOOGLE_RECAPTCHA_SECRET"));  
             var valid = await captchaService.VerifyToken(token);  
   
             if (!valid)  
