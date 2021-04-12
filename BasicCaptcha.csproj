@@ -6,6 +6,7 @@
         <Authors>Benjamin Bristow</Authors>
         <Description>Basic minimal-dependency library to verify (re)CAPTCHA tokens.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/benbristow/basiccaptcha</PackageProjectUrl>
         <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
