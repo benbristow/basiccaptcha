@@ -1,1 +1,1 @@
-# simplecaptcha
+# BasicCAPTCHA
