@@ -35,7 +35,7 @@ namespace Example
 }
 ```
 
-3. Use the service wherever you need require it...
+3. Use the service wherever you require it...
 ```cs
 using System.Threading.Tasks;  
 using BasicCaptcha.Contracts;  
