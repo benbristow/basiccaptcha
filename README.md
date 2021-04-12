@@ -1,5 +1,9 @@
 # BasicCAPTCHA
 
+```
+Install-Package BasicCaptcha -Version 1.0.0
+```
+
 ## Overview
 
 I created this library as I found that other NuGet libraries seem to focus a lot on integrating with ASP's bespoke functionality rather than just verifying tokens. I originally created it to use on an Azure Functions API which uses dependency injection, but you can use it anywhere.
@@ -63,6 +67,10 @@ namespace Example
 ```
 
 ### Manual 
+
+1. Install Nuget package
+
+2. Use as follows...
 
 ```cs
 using System.Threading.Tasks;  
