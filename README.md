@@ -49,7 +49,7 @@ namespace Example
   
         public ExampleController(ICaptchaService captchaService)  
         {  
-            captchaService = captchaService;  
+            _captchaService = captchaService;  
         }  
           
         public async Task<IActionResult> Example(string token)  
