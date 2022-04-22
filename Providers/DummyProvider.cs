@@ -5,6 +5,7 @@ namespace BasicCaptcha.Providers
 {
     internal class DummyProvider : IExternalCaptchaProvider
     {
-        public Task<bool> VerifyToken(string token) => Task.FromResult(token.ToLowerInvariant().Trim() != "fail");
+        public Task<bool> VerifyToken(string token) =>
+            Task.FromResult(token?.ToLowerInvariant().Trim() != "fail");
     }
 }
