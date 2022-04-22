@@ -11,6 +11,7 @@ namespace BasicCaptcha.Providers
     internal class GoogleRecaptchaProvider : IExternalCaptchaProvider
     {
         private readonly string _secretKey;
+
         private readonly HttpClient _httpClient = new HttpClient()
         {
             BaseAddress = new Uri("https://www.google.com/recaptcha/api/")
@@ -21,7 +22,14 @@ namespace BasicCaptcha.Providers
             _secretKey = secretKey;
         }
 
-        public async Task<bool> VerifyToken(string token)
+        public Task<bool> VerifyToken(string token)
+        {
+            return !string.IsNullOrWhiteSpace(token)
+                ? VerifyTokenInternal(token)
+                : Task.FromResult(false);
+        }
+
+        private async Task<bool> VerifyTokenInternal(string token)
         {
             var parameters = new Dictionary<string, string>
             {
@@ -44,7 +52,8 @@ namespace BasicCaptcha.Providers
         }
     }
 
-    internal class GoogleSiteVerifyResponse {
+    internal class GoogleSiteVerifyResponse
+    {
         public bool Success { get; set; }
     }
 }
