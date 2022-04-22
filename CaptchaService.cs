@@ -10,11 +10,12 @@ namespace BasicCaptcha
     {
         private readonly IExternalCaptchaProvider _externalCaptchaProvider;
 
-        public CaptchaService(ExternalCaptchaProvider externalCaptchaProvider, string secretKey)
+        public CaptchaService(ExternalCaptchaProvider externalCaptchaProvider, string secretKey = null)
         {
             _externalCaptchaProvider = externalCaptchaProvider switch
             {
-                ExternalCaptchaProvider.GoogleRecaptcha => new GoogleRecaptcha(secretKey),
+                ExternalCaptchaProvider.Dummy => new DummyProvider(),
+                ExternalCaptchaProvider.GoogleRecaptcha => new GoogleRecaptchaProvider(secretKey),
                 _ => throw new ArgumentOutOfRangeException(nameof(externalCaptchaProvider), externalCaptchaProvider, null)
             };
         }
