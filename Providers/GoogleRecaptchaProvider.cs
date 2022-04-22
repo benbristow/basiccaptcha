@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace BasicCaptcha.Providers
 {
-    internal class GoogleRecaptcha : IExternalCaptchaProvider
+    internal class GoogleRecaptchaProvider : IExternalCaptchaProvider
     {
         private readonly string _secretKey;
         private readonly HttpClient _httpClient = new HttpClient()
@@ -16,7 +16,7 @@ namespace BasicCaptcha.Providers
             BaseAddress = new Uri("https://www.google.com/recaptcha/api/")
         };
 
-        internal GoogleRecaptcha(string secretKey)
+        internal GoogleRecaptchaProvider(string secretKey)
         {
             _secretKey = secretKey;
         }

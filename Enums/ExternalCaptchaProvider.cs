@@ -2,6 +2,7 @@
 {
     public enum ExternalCaptchaProvider
     {
-        GoogleRecaptcha = 1
+        Dummy = 1,
+        GoogleRecaptcha
     }
 }

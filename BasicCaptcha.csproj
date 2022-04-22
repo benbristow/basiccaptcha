@@ -9,6 +9,7 @@
         <PackageProjectUrl>https://github.com/benbristow/basiccaptcha</PackageProjectUrl>
         <TargetFramework>netstandard2.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
