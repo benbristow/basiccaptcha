@@ -9,7 +9,7 @@ namespace BasicCaptcha.Extensions
         public static IServiceCollection AddCaptcha(
             this IServiceCollection services,
             ExternalCaptchaProvider externalCaptchaProvider,
-            string secretKey)
+            string secretKey = null)
         {
             services.AddTransient<ICaptchaService>(_ => new CaptchaService(externalCaptchaProvider, secretKey));
             return services;

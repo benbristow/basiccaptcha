@@ -1,7 +1,7 @@
 # BasicCAPTCHA
 
 ```
-Install-Package BasicCaptcha -Version 1.0.1
+Install-Package BasicCaptcha -Version 1.0.2
 ```
 
 ## Overview
