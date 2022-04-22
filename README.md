@@ -117,7 +117,7 @@ To use this you can use `ExternalCaptchaProvider.Dummy` when configuring BasicCa
 e.g.
 
 ```
-var captchaService = new CaptchaService(ExternalCaptchaProvider.Dummy));  
+var captchaService = new CaptchaService(ExternalCaptchaProvider.Dummy);  
 ```
 
 If you wish to force a failure, you can pass `fail` as the token (case-insensitive) and the `VerifyToken` method will always
