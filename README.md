@@ -17,7 +17,7 @@ You can also extend the library to support other providers by extending the `Bas
 1. Install Nuget Package
 
 ```
-Install-Package BasicCaptcha -Version 1.1.0
+Install-Package BasicCaptcha -Version 1.1.1
 ```
 
 2. Register the service with your secret key in your startup file, here I'm using an environment variable. Don't
