@@ -9,7 +9,7 @@
         <PackageProjectUrl>https://github.com/benbristow/basiccaptcha</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>1.1.1</PackageVersion>
+        <PackageVersion>1.2.0</PackageVersion>
         <TargetFrameworks>netstandard2.1;net7.0</TargetFrameworks>
         <LangVersion>default</LangVersion>
         <Nullable>enable</Nullable>
