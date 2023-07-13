@@ -49,7 +49,7 @@ public sealed class GoogleRecaptchaProvider : BaseProvider
         }
     }
 
-    public class GoogleSiteVerifyResponse
+    public sealed class GoogleSiteVerifyResponse
     {
         [JsonProperty]
         public bool Success { get; set; }
