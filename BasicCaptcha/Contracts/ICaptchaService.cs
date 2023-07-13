@@ -4,5 +4,5 @@ namespace BasicCaptcha.Contracts;
 
 public interface ICaptchaService
 {
-    public Task<bool> VerifyToken(string? token);
+    public Task<bool> VerifyTokenAsync(string? token);
 }

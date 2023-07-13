@@ -22,13 +22,13 @@ public sealed class CaptchaServiceTests
     public async Task VerifyTokenAsync_WhenProviderReturnsBoolean_ReturnsExpectedResult(bool expected)
     {
         // Arrange
-        A.CallTo(() => _provider.VerifyToken(Token, _httpClient)).Returns(expected);
+        A.CallTo(() => _provider.VerifyTokenAsync(Token, _httpClient)).Returns(expected);
 
         // Act
-        var result = await _underTest.VerifyToken(Token);
+        var result = await _underTest.VerifyTokenAsync(Token);
 
         // Assert
         result.Should().Be(expected);
-        A.CallTo(() => _provider.VerifyToken(Token, _httpClient)).MustHaveHappenedOnceExactly();
+        A.CallTo(() => _provider.VerifyTokenAsync(Token, _httpClient)).MustHaveHappenedOnceExactly();
     }
 }

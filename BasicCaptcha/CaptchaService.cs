@@ -16,5 +16,5 @@ public sealed class CaptchaService : ICaptchaService
         _httpClient = httpClient;
     }
 
-    public Task<bool> VerifyToken(string? token) => _provider.VerifyToken(token, _httpClient);
+    public Task<bool> VerifyTokenAsync(string? token) => _provider.VerifyTokenAsync(token, _httpClient);
 }
