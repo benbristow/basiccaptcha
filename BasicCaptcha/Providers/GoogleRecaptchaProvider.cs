@@ -16,7 +16,7 @@ public sealed class GoogleRecaptchaProvider : BaseProvider
         _secretKey = secretKey;
     }
 
-    public override Task<bool> VerifyToken(string? token, HttpClient? httpClient = null)
+    public override Task<bool> VerifyTokenAsync(string? token, HttpClient? httpClient = null)
     {
         if (httpClient is null)
             throw new ArgumentNullException(nameof(httpClient), "HttpClient is required");

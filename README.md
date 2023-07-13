@@ -19,7 +19,7 @@ You can also extend the library to support other providers by extending the `Bas
 1. Install Nuget Package
 
 ```
-Install-Package BasicCaptcha -Version 1.1.1
+Install-Package BasicCaptcha -Version 1.2.0
 ```
 
 2. Register the service with your secret key in your startup file, here I'm using an environment variable. Don't
@@ -50,8 +50,7 @@ public sealed class ExampleController : Controller
     
   public async Task<IActionResult> Example(string token)  
   {  
-      var valid = await _captchaService.VerifyToken(token);
-
+      var valid = await _captchaService.VerifyTokenAsync(token);
       return valid ? Ok() : BadRequest();  
   }  
 }  

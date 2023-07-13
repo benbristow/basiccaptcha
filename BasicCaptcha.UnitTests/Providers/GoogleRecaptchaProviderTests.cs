@@ -39,7 +39,7 @@ public sealed class GoogleRecaptchaProviderTests
         using var httpClient = options.CreateHttpClient();
 
         // Act
-        var result = await _underTest.VerifyToken(Token, httpClient);
+        var result = await _underTest.VerifyTokenAsync(Token, httpClient);
 
         // Assert
         result.Should().Be(expected);
@@ -54,7 +54,7 @@ public sealed class GoogleRecaptchaProviderTests
         using var httpClient = options.CreateHttpClient();
 
         // Act
-        var result = await _underTest.VerifyToken(null, httpClient);
+        var result = await _underTest.VerifyTokenAsync(null, httpClient);
 
         // Assert
         result.Should().BeFalse();
@@ -77,7 +77,7 @@ public sealed class GoogleRecaptchaProviderTests
         using var httpClient = options.CreateHttpClient();
 
         // Act
-        var exception = await Record.ExceptionAsync(() => _underTest.VerifyToken(Token, httpClient));
+        var exception = await Record.ExceptionAsync(() => _underTest.VerifyTokenAsync(Token, httpClient));
 
         // Assert
         exception.Should().NotBeNull().And.BeOfType<CaptchaException>();
