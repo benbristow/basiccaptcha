@@ -12,7 +12,6 @@
         <TargetFrameworks>netstandard2.1;net7.0</TargetFrameworks>
         <LangVersion>default</LangVersion>
         <Nullable>enable</Nullable>
-        <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/benbristow/basiccaptcha</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
