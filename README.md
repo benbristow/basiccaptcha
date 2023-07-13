@@ -67,7 +67,7 @@ To use this you can use the dummy provider
 
 ```csharp
 builder.Services.AddHttpClient();  
-builder.Services.AddCaptcha(new DummyRecaptchaProvider();  
+builder.Services.AddCaptcha(new DummyRecaptchaProvider());  
 ```
 
 If you wish to force a failure, you can pass `fail` as the token (case-insensitive) and the `VerifyToken` method will
