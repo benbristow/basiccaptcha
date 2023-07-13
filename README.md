@@ -12,7 +12,7 @@ Basic library for verifying CAPTCHA tokens. Currently only
 supports [Google ReCAPTCHA (V3/V2)](https://developers.google.com/recaptcha/docs/verify) which use the 'siteverify'
 endpoint to verify tokens, but I'm open to accepting pull requests for other providers if required.
 
-You can also extend the library to support other providers by extending the `BaseProvider` class and implementing the `VerifyToken` method.
+You can also extend the library to support other providers by extending the `BaseProvider` class and implementing the `VerifyTokenAsync` method.
 
 ## Getting Started
 
