@@ -1,5 +1,7 @@
 # BasicCAPTCHA
 
+[![Run unit tests](https://github.com/benbristow/basiccaptcha/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/benbristow/basiccaptcha/actions/workflows/unit-tests.yml)
+
 ## Overview
 
 I created this library as I found that other NuGet libraries seem to focus a lot on integrating with ASP's bespoke
